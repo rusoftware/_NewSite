@@ -1,0 +1,63 @@
+<?
+/*
+include("Admin/Conexion.inc.php");
+include("Admin/Funciones/Funciones.inc.php");
+*/
+
+$pagina='home';
+?>
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- metatags -->
+    <title>Titulo entre 10 y 70 letras</title>
+	<meta name="Description" content="Es conveniente que su Meta descripción su contenga entre 70 y 160 letras (espacios incluidos) - Asegúrese de que cada página tiene una Meta descripción única y que contiene las palabras clave más importantes de su página">
+	<? include_once('inc.metaTags.php') ?>
+    
+	<!-- CSS Styles | vinculados y definiciones individuales -->
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <!-- /CSS -->
+    
+    <!-- SCRIPTS -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    
+    <? include_once('inc.analytics.php') ?>
+    <!-- /SCRIPTS -->
+</head>
+<body>
+  <div id="Container">
+  	<header>
+    	<? include_once('inc.header.php') ?>
+    </header>
+    <section>
+    	section
+    </section>
+    <footer>
+    	footer
+    </footer>
+    
+    texto comun<br />
+    <p>parrafo de texto</p><br />
+    <ul><li>lista</li><li>lista2</li></ul><br />
+    <a href="#">link comun</a><br />
+    <h1>esto es h1</h1>
+    <h2>esto es h2</h2>
+    <h3>esto es h3</h3>
+    <h4>esto es h4</h4>
+    <form action="inc.forms.php" method="post" name="form">
+    <input type="hidden" name="accion" value="contactar" />
+    <label for="Nombre">Nombre y Apellido:<input type="text" name="Nombre" /></label>
+    <br />
+    <label for="Emilio">E-Mail:<input type="text" name="Emilio" /></label>
+    <br />
+    <label for="Comentario">Comentario:<textarea name="Comentario" rows="3" cols="12"></textarea></label>
+    <br />
+    <img src="phpMailer/inc.captcha.php" />
+    <input name="mirtuono_captcha" type="text"  />
+    <br />
+    <input type="submit" value="enviar" />
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+RewriteEngine on
+RewriteBase /
+
+# ## SECCION PARA REDIRECCIONAR SIEMPRE CON/SIN WWW
+# RewriteCond %{HTTP_HOST} ^www.contraluzvitraux.com.ar [nc]
+# RewriteRule ^(.*)$ http://contraluzvitraux.com.ar/$1 [r=301,nc]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+Rewriterule ^unsubscribe/(.+)/(.+).html$ Admin/Newsletter/unsubscribe.php?eid=$1&eem=$2
+Rewriterule ^unsubscribe/(.+)/(.+).html/(.+)$ Admin/Newsletter/unsubscribe.php?eid=$1&eem=$2&msg=$3
+
+# Rewriterule ^evento/(.+)_(.+).html$ evento.php?evCod=$1
+# Rewriterule ^Notas/(.+)_(.+).html$ Nota.php?id=$1
+</IfModule>

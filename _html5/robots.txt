@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /Admin/
+Disallow: /webmail/
+Disallow: /towebmail/
+Disallow: /css/
+Disallow: /phpMailer/
+Disallow: /phpmyadmin/
+Disallow: /js/
+Disallow: /swf/
+Disallow: /css/
+Disallow: /_.htaccess

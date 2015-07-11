@@ -1,0 +1,18 @@
+##Asunto##
+
+Nombre.............: ##Nombre##
+Empresa............: ##Empresa##
+C.U.I.T............: ##Cuit##
+Email..............: ##Email##
+Teléfono...........: ##Telefono##
+Dirección..........: ##Direccion##
+Ciudad.............: ##Ciudad##
+Cod. Postal........: ##CPostal##
+Provincia..........: ##Provincia##
+País...............: ##Pais##
+
+Mensaje:
+##Mensaje##
+
+
+Mainero - www.mainero.com.ar

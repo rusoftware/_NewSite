@@ -1,0 +1,25 @@
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+@mixin transform($rotate, $scale, $skew, $translate){
+	//transform: rotate(0deg) scale(0.67) skew(1deg) translate(10px);
+	transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+	-webkit-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+	-moz-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+	-o-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+	-ms-transform: rotate($rotate) scale($scale) skew($skew) translate($translate);
+}
+@mixin bs-bb($property){
+	//-webkit-box-sizing: border-box;
+	-webkit-box-sizing: $property;
+	-moz-box-sizing: $property;
+	box-sizing: $property;
+}
+@mixin rounded($radio) {
+	-webkit-border-radius: $radio;
+	border-radius: $radio;
+}

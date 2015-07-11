@@ -1,0 +1,42 @@
+.white{color:#FFFFFF;}
+.black{color:#000000;}
+.lgreen{color:#7bb4a5;}
+.dgreen{color:#498170;}
+
+
+/* /////////////////////////////////////////////////////////////////////	STRUCTURE */
+
+/* /////////////////////////////////////////////////////////////////////	grid */
+
+
+/*/// Maquetado Contenedor Principal ///*/
+#Container{
+	width: 846px;
+	height: 631px;
+	clear: both;
+	text-align: left;
+	margin:0px auto;
+	padding: 0px;
+	border: 0px;
+	position: absolute;
+	left: 50%;
+	margin-left: -423px;
+/*	top: 50%;
+	margin-top: -282px;*/
+}
+#Site{
+	width: 780px;
+	min-width: 780px;
+	max-width: 780px;
+	height: 565px;
+	min-height: 565px;
+	max-height: 565px;
+	clear: both;
+	margin: 0px;
+	background: url(../imagenes/background.jpg) no-repeat top left;
+	overflow: hidden;
+	position: absolute;
+	left: 33px;
+	top: 33px;
+/*	border: solid 5px #663300;*/
+}
